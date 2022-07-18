@@ -1,0 +1,25 @@
+._anim-items {
+	transition: transform 0.5s ease 0.3s, opacity 0.8s ease 0.3s;
+	transform: translate(0px, 40px);
+	opacity: 0;
+}
+
+/*.hero__main-wrapper ._anim-items{
+	opacity: 0;
+}*/
+
+._anim-items._active{
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+.power__item-wrapper ._anim-items {
+	transform: translate(0px, 1%);
+	opacity: 0;
+}
+
+@media screen and (max-width: 600px){
+	._anim-items {
+	transform: translate(0px, 20px);
+	}
+}
